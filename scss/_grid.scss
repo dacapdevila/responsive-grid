@@ -28,3 +28,42 @@
       grid-template-columns: repeat(5, 1fr);
     }
   }
+
+
+  /*
+  .gallery {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+  }
+
+  // auto-fill
+  // auto-fit
+  // Los auto fill y fit son muy parecidos para notar la diferencia entre uno y otro hay que tener POCOS elementos en la grid.
+  // min-max(valueA, valueB) -> valueA: unidad de medida absoluta, valueB: unidad de medida relativa.
+  // min(value1,value2) -> en este punto va a comparar el value1 y value2 y obtendra el que sea menor medida.
+  // min-max(min(value1, value2), valueB)); -> en este caso value1 y value 2 corresponden a MIN y el resultado sera el valueA del min-max.
+  
+  // grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+  // Probar: 
+  grid-auto-rows: 28rem;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(min(calc(50% - 1rem), 15rem), 1fr));
+
+  // Otra cosa interesante es probar una grilla mas avanzada :)
+  .featured {
+    grid-column: span 2;
+  }
+  Cambiar:
+  grid-auto-flow: dense;
+
+
+  Cambiar de:
+    grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+  a:
+    grid-auto-flow: dense;
+  grid-auto-rows: 28rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(calc(50% - 1rem), 15rem), 1fr));
+  */
